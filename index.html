@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Jjumpstart Technologies Jamaica</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+  <nav class=" white" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo indigo-text">Jjumpstart</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="business-name.html" class="indigo-text">Business Registration</a></li>
+        <li><a href="bank-account.html" class="indigo-text">Business Bank Account</a></li>
+        <li><a href="#contact-us" class="modal-trigger indigo waves-effect waves-light btn">Contact Us</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+          <li><a href="#" class="indigo-text">Business Registration</a></li>
+          <li><a href="#" class="indigo-text">Business Bank Account</a></li>
+          <li><a href="#contact-us" class="modal-trigger indigo waves-effect waves-light btn">Contact Us</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons indigo-text">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="hide-on-small-only">
+    <br>
+    <div class="center section container">
+        <img src="src/business-1.jpg" alt="">
+      </div>
+    <br>
+  </div>
+
+
+  <div class="divider"></div>
+    <div class="no-pad-bot" id="index-banner">
+      <div class="container">
+        <h1 class="header amber-text">
+          The easiest way for businesses to 
+          get going. Fast and safely.
+        </h1>
+        <div class="row">
+          <h5 class="header col s12 light">
+              We're 100% focused on helping businesses get started, quickly and safely. Going far beyond simply providing forms. 
+              Get your everything done with confidence, so you can get back to building your business.
+            </h5>
+        </div>
+        <div class="row">
+          <a class="btn-large waves-effect waves-light amber dropdown-trigger btn" data-target='get-started'>Get Started Today!</a>
+        </div>
+        <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center indigo-text"><i class="material-icons">business</i></h2>
+            <h5 class="center">Business Registration</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <a href="business-name.html" class="indigo-text">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center indigo-text"><i class="material-icons">account_balance</i></h2>
+            <h5 class="center">Business Bank Account</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <a href="bank-account.html" class="indigo-text">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer amber">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="">Jjumpstart Labs</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Structure -->
+  <div id="contact-us" class="modal">
+      <div class="modal-content">
+        <h4 class="indigo-text">Contact Us</h4>
+        <p>If you can any questions please feel free to reach out to us. </p>
+        <p>
+            <span class="indigo-text">Email: </span> info@jumpstartjamaica.com
+            <br> 
+            <span class="indigo-text">Phone:</span> 1(876) 1234-567
+        </p> 
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Okay</a>
+      </div>
+    </div>
+
+  <!-- Dropdown Structure -->
+  <ul id='get-started' class='dropdown-content'>
+      <li><a class="indigo-text" href="business-name.html">Register A Business Name</a></li>
+      <li><a class="indigo-text" href="bank-account.html">Open A Business Bank Account</a></li>
+    </ul>
+
+  
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+     $(document).ready(function(){
+    $('.modal').modal();
+  });
+  $('.dropdown-trigger').dropdown();
+  </script>
+
+  </body>
+</html>
